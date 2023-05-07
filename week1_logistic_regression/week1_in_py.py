@@ -1,6 +1,6 @@
 import nltk
 from os import getcwd
-import w1_unittest
+import week1_logistic_regression.w1_unittest as w1_unittest
 
 nltk.download('twitter_samples')
 nltk.download('stopwords')
@@ -12,7 +12,7 @@ import numpy as np
 import pandas as pd
 from nltk.corpus import twitter_samples 
 
-from utils import process_tweet, build_freqs
+from week1_logistic_regression.utils import process_tweet, build_freqs
 
 # select the set of positive and negative tweets
 all_positive_tweets = twitter_samples.strings('positive_tweets.json')
